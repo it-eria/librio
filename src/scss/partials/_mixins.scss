@@ -1,0 +1,6 @@
+/* Icon mixin */
+@mixin icon($width, $height, $x, $y) {
+  width: $width;
+  height: $height;
+  background-position: $x $y;
+}

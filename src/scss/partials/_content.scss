@@ -1,0 +1,19 @@
+.content {
+  padding: 45px 0 107px;
+  background-image: url('../img/content-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 0 0;
+  &__title {
+    margin-bottom: 30px;
+    h1,h2,h3,h4,h5,h6 {
+      margin: 0;
+      padding: 0;
+    }
+    h2 {
+      font-family: $f-medium;
+      font-size: 3rem;
+      color: $c-darkblue;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.icon {
+  display: inline-block;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  background-image: url('../img/sprites.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  &--basket {
+    @include icon(25px, 24px, 0, 0);
+  }
+  &--arr-up {
+    @include icon(10px, 5px, -25px, 0);
+  }
+  &--arr-down {
+    @include icon(10px, 5px, -25px, -5px);
+  }
+  &--blue-ckeck {
+    @include icon(12px, 10px, -35px, 0);
+  }
+  &--lock {
+    @include icon(16px, 21px, -25px, -10px);
+  }
+  &--credit-visa {
+    @include icon(34px, 23px, -47px, 0px);
+  }
+  &--credit-mastercard {
+    @include icon(34px, 23px, -47px, -23px);
+  }
+  &--credit-american-express {
+    @include icon(35px, 23px, -81px, 0);
+  }
+  &--credit-paypal {
+    @include icon(34px, 23px, -47px, -46px);
+  }
+  &--lock-dark {
+    @include icon(19px, 25px, 0, -24px);
+  }
+  &--check-white {
+    @include icon(10px, 12px, -25px, -31px);
+  }
+  &--pen {
+    @include icon(14px, 14px, 0, -49px);
+  }
+  &--ship-white {
+    @include icon(21px, 12px, -14px, -49px);
+  }
+  &--ship-blue {
+    @include icon(21px, 12px, -14px, -61px);
+  }
+  &--payment-white {
+    @include icon(16px, 11px, -81px, -46px);
+  }
+  &--payment-blue {
+    @include icon(16px, 11px, -97px, -46px);
+  }
+  &--arr-up-white {
+    @include icon(10px, 5px, 0, -63px);
+  }
+  &--credit-mastercard-2 {
+    @include icon(39px, 24px, -116px, 0);
+  }
+  &--credit-visa-2 {
+    @include icon(44px, 13px, -155px, 0);
+  }
+  &--credit-american-express-2 {
+    @include icon(46px, 16px, -116px, -24px);
+  }
+  &--arr-right {
+    @include icon(12px, 12px, -162px, -13px);
+  }
+  &--credit-paypal-2 {
+    @include icon(86px, 22px, -116px, -40px);
+  }
+  &--pen-small {
+    @include icon(10px, 10px, -37px, -31px);
+  }
+  &--arr-left {
+    @include icon(12px, 12px, -174px, -13px);
+  }
+}

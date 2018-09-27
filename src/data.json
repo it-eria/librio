@@ -1,0 +1,17 @@
+{
+  "shoping-cart-item": [
+    {
+      "shoping-cart-item__image": "img/img-1.png",
+      "shoping-cart-item__title": "The Tree, The Key and Me",
+      "shoping-cart-item__hero": "Nevena",
+      "shoping-cart-item__lang": "English (GB)",
+      "shoping-cart-item__format": "Soft Cover"
+    },
+    {
+      "shoping-cart-item__image": "img/img-2.png",
+      "shoping-cart-item__title": "The Tree, The Key and Me",
+      "shoping-cart-item__lang": "English (GB)",
+      "shoping-cart-item__format": "Soft Cover"
+    }
+  ]
+}

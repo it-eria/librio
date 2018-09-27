@@ -1,0 +1,24 @@
+{{#shoping-cart-item}}
+<div class="shoping-cart-item">
+  <div class="ui grid">
+    <div class="column two wide shoping-cart-item__image">
+      <div class="flex-wrapper">
+        <img src="{{{shoping-cart-item__image}}}" alt="image">      
+      </div>
+    </div>
+    <div class="column four wide shoping-cart-item__about">
+      <h4>{{shoping-cart-item__title}}</h4>
+      {{#shoping-cart-item__hero}}
+      <div class="shoping-cart-item__hero">
+        <p>Hero: <b>{{shoping-cart-item__hero}}</b></p>
+      </div>
+      {{/shoping-cart-item__hero}}
+      <p>Language: {{shoping-cart-item__lang}}</p>
+      <p>Format: {{shoping-cart-item__format}}</p>
+      <a href="#" class="btn btn--edit">
+        Edit item
+      </a>
+    </div>
+  </div>
+</div>
+{{/shoping-cart-item}}
