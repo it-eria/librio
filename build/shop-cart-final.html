@@ -32,7 +32,7 @@
     <div class="content__title">
       <h2>Your shopping cart</h2>
     </div>
-<div class="shoping-cart-item">
+<div class="shoping-cart-item" data-js="shoping-cart-item">
   <div class="ui grid">
     <div class="column two wide shoping-cart-item__image">
       <div class="flex-wrapper">
@@ -47,12 +47,61 @@
       <p>Language: English (GB)</p>
       <p>Format: Soft Cover</p>
       <a href="#" class="btn btn--edit">
-        Edit item
+        <i class="pencil alternate icon"></i>Edit item
       </a>
+    </div>
+    <div class="column eight wide shoping-cart-item__price-generator">
+      <form>
+        <div class="ui four column grid">
+          <div class="column">
+            <h4>Unit Price</h4>
+            <div class="price-generator__item unit-price" data-js="unit-price">
+              <span class="currency">$</span><span class="value">32.00</span>
+            </div>
+          </div>
+          <div class="column">
+            <h4>Copies</h4>
+            <div class="price-generator__item copies">
+              <div class="count-ctrl">
+                <input type="number" value="1" class="counter">
+                <a href="#" class="ctrl-btn ctrl-btn--up" data-js="increment">
+                  <i class="angle up icon"></i>
+                </a>
+                <a href="#" class="ctrl-btn ctrl-btn--down" data-js="decrement">
+                  <i class="angle down icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <h4>Add giftwrap?</h4>
+            <div class="price-generator__item giftwrap">
+              <label>
+                <input type="checkbox">
+                <span class="pseudo-checkbox">
+                  <i class="check icon"></i>
+                </span>
+                <span class="currency">$</span><span class="value">3.50</span>
+              </label>
+            </div>
+          </div>
+          <div class="column">
+            <h4>Cost</h4>
+            <div class="price-generator__item unit-price" data-js="cost">
+              <span class="currency">$</span><span class="value">32.00</span>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="column two wide shoping-cart-item__remove">
+      <div class="remove-btn-wrapper">
+        <a href="#" class="btn btn--remove"><i class="x icon"></i></a>
+      </div>
     </div>
   </div>
 </div>
-<div class="shoping-cart-item">
+<div class="shoping-cart-item" data-js="shoping-cart-item">
   <div class="ui grid">
     <div class="column two wide shoping-cart-item__image">
       <div class="flex-wrapper">
@@ -64,11 +113,117 @@
       <p>Language: English (GB)</p>
       <p>Format: Soft Cover</p>
       <a href="#" class="btn btn--edit">
-        Edit item
+        <i class="pencil alternate icon"></i>Edit item
       </a>
+    </div>
+    <div class="column eight wide shoping-cart-item__price-generator">
+      <form>
+        <div class="ui four column grid">
+          <div class="column">
+            <h4>Unit Price</h4>
+            <div class="price-generator__item unit-price" data-js="unit-price">
+              <span class="currency">$</span><span class="value">32.00</span>
+            </div>
+          </div>
+          <div class="column">
+            <h4>Copies</h4>
+            <div class="price-generator__item copies">
+              <div class="count-ctrl">
+                <input type="number" value="1" class="counter">
+                <a href="#" class="ctrl-btn ctrl-btn--up" data-js="increment">
+                  <i class="angle up icon"></i>
+                </a>
+                <a href="#" class="ctrl-btn ctrl-btn--down" data-js="decrement">
+                  <i class="angle down icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <h4>Add giftwrap?</h4>
+            <div class="price-generator__item giftwrap">
+              <label>
+                <input type="checkbox">
+                <span class="pseudo-checkbox">
+                  <i class="check icon"></i>
+                </span>
+                <span class="currency">$</span><span class="value">3.50</span>
+              </label>
+            </div>
+          </div>
+          <div class="column">
+            <h4>Cost</h4>
+            <div class="price-generator__item unit-price" data-js="cost">
+              <span class="currency">$</span><span class="value">32.00</span>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="column two wide shoping-cart-item__remove">
+      <div class="remove-btn-wrapper">
+        <a href="#" class="btn btn--remove"><i class="x icon"></i></a>
+      </div>
     </div>
   </div>
 </div>
+    <div>
+      <div class="ui grid centered">
+        <div class="column four wide">
+          <a href="#" class="btn btn--add-more">
+            <i class="plus circle icon"></i> Add Another Book
+          </a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="ui grid centered">
+        <div class="column seven wide get-discount">
+          <p>Add another book to get 15% off everything. Code <span>YAY15</span></p>
+        </div>
+      </div>
+    </div>
+    <div>
+<div class="shoping-cart-summary-row-item">
+  <div class="ui grid">
+    <div class="right floated column four wide">
+      <h4>Discount</h4>
+      <div class="discount">
+        -<span class="currency">$</span><span class="value">13.00</span> <span class="percents">(10%)</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="shoping-cart-summary-row-item">
+  <div class="ui grid">
+    <div class="right floated column four wide">
+      <h4>Estimated shipping</h4>
+      <div>
+        <span class="currency">$</span><span class="value">20.00</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="shoping-cart-summary-row-item">
+  <div class="ui grid">
+    <div class="right floated column four wide">
+      <h4>Total Price</h4>
+      <div class="total">
+        <span class="currency">$</span><span class="value">118.50</span>
+      </div>
+    </div>
+  </div>
+</div>    </div>
+    <div>
+      <div class="ui grid">
+        <div class="right floated column four wide">
+          <a href="#" class="btn btn--checkout">
+            <i class="lock icon"></i>
+            Go to Checkout
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </section><footer class="footer">
   <div class="container">

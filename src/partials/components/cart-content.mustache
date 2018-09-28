@@ -4,5 +4,34 @@
       <h2>Your shopping cart</h2>
     </div>
     {{> shoping-cart-item }}
+    <div>
+      <div class="ui grid centered">
+        <div class="column four wide">
+          <a href="#" class="btn btn--add-more">
+            <i class="plus circle icon"></i> Add Another Book
+          </a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="ui grid centered">
+        <div class="column seven wide get-discount">
+          <p>Add another book to get 15% off everything. Code <span>YAY15</span></p>
+        </div>
+      </div>
+    </div>
+    <div>
+      {{> shoping-cart-summary }}
+    </div>
+    <div>
+      <div class="ui grid">
+        <div class="right floated column four wide">
+          <a href="#" class="btn btn--checkout">
+            <i class="lock icon"></i>
+            Go to Checkout
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>

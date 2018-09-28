@@ -16,4 +16,88 @@
       background-color: $c-grey-3;
     }
   }
+  &--edit {
+    font-family: $f-medium;
+    font-size: 0.8125rem;
+    color: $c-lightblue;
+    &:hover {
+      color: $c-lightblue;
+    }
+  }
+  &--remove {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #e0e1e2;
+    color: #fff;
+    font-family: $f-book;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+    .icon {
+      width: 16px;
+      height: 16px;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &:hover {
+      color: $c-white;
+      background-color: darken(#e0e1e2, 5%);
+    }
+  }
+  &--add-more {
+    width: 100%;
+    padding: 16px 0 14px;
+    color: $c-lightblue-2;
+    transition: all .3s ease-in-out;
+    margin-top: 1rem;
+    border: 1px solid currentColor;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+    font-family: $f-medium;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    .icon {
+      font-size: 1.375rem;
+    }
+    &:hover {
+      color: darken($c-lightblue-2, 5%);
+    }
+  }
+  &--checkout {
+    width: 100%;
+    padding: 16px 0;
+    margin-top: 15px;
+    text-align: center;
+    color: $c-white;
+    background-color: $c-lightblue-2;
+    border-radius: 7px;
+    position: relative;
+    z-index: 200;
+    transition: all .3s ease-in-out;
+    box-shadow: 0 4px 0 #268f8e;
+    font-family: $f-medium;
+    font-size: 1.125rem;
+    top: 0;
+    &:hover {
+      color: $c-white;
+      top: -2px;
+      background-color: lighten($c-lightblue-2, 5%);
+      box-shadow: 0 6px 0 lighten(#268f8e, 5%);
+    }
+  }
 }
