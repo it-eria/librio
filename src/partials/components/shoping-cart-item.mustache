@@ -1,34 +1,43 @@
 {{#shoping-cart-item}}
 <div class="shoping-cart-item" data-js="shoping-cart-item">
   <div class="ui grid">
-    <div class="column two wide shoping-cart-item__image">
+    <div class="four wide mobile two wide tablet two wide computer column shoping-cart-item__image">
       <div class="flex-wrapper">
         <img src="{{{shoping-cart-item__image}}}" alt="image">      
       </div>
     </div>
-    <div class="column four wide shoping-cart-item__about">
-      <h4>{{shoping-cart-item__title}}</h4>
-      {{#shoping-cart-item__hero}}
-      <div class="shoping-cart-item__hero">
-        <p>Hero: <b>{{shoping-cart-item__hero}}</b></p>
+    <div class="ten wide mobile four wide tablet four wide computer column shoping-cart-item__about">
+      <h3>{{shoping-cart-item__title}}</h3>
+      <div class="ui grid">
+        <div class="twelve wide mobile sixteen wide tablet sixteen wide computer column">
+          {{#shoping-cart-item__hero}}
+          <div class="shoping-cart-item__hero">
+            <p>Hero: <b>{{shoping-cart-item__hero}}</b></p>
+          </div>
+          {{/shoping-cart-item__hero}}
+          <p>Language: {{shoping-cart-item__lang}}</p>
+          <p>Format: {{shoping-cart-item__format}}</p>
+          <a href="#" class="btn btn--edit">
+            <i class="pencil alternate icon"></i>Edit item
+          </a>
+        </div>
+        <div class="mobile only four wide column">
+          <div class="remove-btn-wrapper">
+            <a href="#" class="btn btn--remove"><i class="x icon"></i></a>
+          </div>
+        </div>
       </div>
-      {{/shoping-cart-item__hero}}
-      <p>Language: {{shoping-cart-item__lang}}</p>
-      <p>Format: {{shoping-cart-item__format}}</p>
-      <a href="#" class="btn btn--edit">
-        <i class="pencil alternate icon"></i>Edit item
-      </a>
     </div>
-    <div class="column eight wide shoping-cart-item__price-generator">
+    <div class="sixteen wide mobile eight wide tablet eight wide computer column shoping-cart-item__price-generator">
       <form>
-        <div class="ui four column grid">
-          <div class="column">
+        <div class="ui grid">
+          <div class="eight wide tablet four wide computer column tablet only computer only">
             <h4>Unit Price</h4>
             <div class="price-generator__item unit-price" data-js="unit-price">
               <span class="currency">$</span><span class="value">32.00</span>
             </div>
           </div>
-          <div class="column">
+          <div class="five wide mobile eight wide tablet four wide computer column">
             <h4>Copies</h4>
             <div class="price-generator__item copies">
               <div class="count-ctrl">
@@ -42,7 +51,7 @@
               </div>
             </div>
           </div>
-          <div class="column">
+          <div class="five wide mobile eight wide tablet four wide computer column">
             <h4>Add giftwrap?</h4>
             <div class="price-generator__item giftwrap">
               <label>
@@ -54,7 +63,8 @@
               </label>
             </div>
           </div>
-          <div class="column">
+          <div class="mobile only one wide column"></div>
+          <div class="five wide mobile eight wide tablet four wide computer column">
             <h4>Cost</h4>
             <div class="price-generator__item unit-price" data-js="cost">
               <span class="currency">$</span><span class="value">32.00</span>
@@ -63,7 +73,7 @@
         </div>
       </form>
     </div>
-    <div class="column two wide shoping-cart-item__remove">
+    <div class=" two wide computer column tablet only computer only shoping-cart-item__remove">
       <div class="remove-btn-wrapper">
         <a href="#" class="btn btn--remove"><i class="x icon"></i></a>
       </div>

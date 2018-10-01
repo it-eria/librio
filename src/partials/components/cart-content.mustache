@@ -5,8 +5,8 @@
     </div>
     {{> shoping-cart-item }}
     <div>
-      <div class="ui grid centered">
-        <div class="column four wide">
+      <div class="ui grid centered aligned">
+        <div class="sixteen wide mobile ten wide tablet four wide computer column">
           <a href="#" class="btn btn--add-more">
             <i class="plus circle icon"></i> Add Another Book
           </a>
@@ -14,8 +14,8 @@
       </div>
     </div>
     <div>
-      <div class="ui grid centered">
-        <div class="column seven wide get-discount">
+      <div class="ui grid centered aligned">
+        <div class="sixteen wide mobile ten wide tablet seven wide computer column get-discount">
           <p>Add another book to get 15% off everything. Code <span>YAY15</span></p>
         </div>
       </div>
@@ -25,11 +25,35 @@
     </div>
     <div>
       <div class="ui grid">
-        <div class="right floated column four wide">
+        <div class="sixteen wide mobile seven wide tablet four wide computer right floated column">
           <a href="#" class="btn btn--checkout">
             <i class="lock icon"></i>
             Go to Checkout
           </a>
+          <div class="coupon">
+            <a href="#">Have a promotional offer or gift card?</a>
+            <form action="#">
+              <label for="coupon">Enter your code</label>
+              <input type="text" id="coupon">
+              <button type="submit">Apply coupon</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      {{> shiping-cost-and-time-estimate }}
+    </div>
+    <div>
+      <div class="ui grid mobile only">
+        <div class="sixteen wide mobile four wide tablet right floated column">
+          <a href="#" class="btn btn--checkout">
+            <i class="lock icon"></i>
+            Go to Checkout
+          </a>
+          <div class="coupon">
+            <a href="#">Have a promotional offer or gift card?</a>
+          </div>
         </div>
       </div>
     </div>

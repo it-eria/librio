@@ -1,0 +1,25 @@
+.shiping-cost-row-item {
+  padding: 15px 30px;
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+  color: #2f5a75;
+  font-family: $f-medium;
+  font-size: 1rem;
+  .price-generator__item {
+    padding: 15px 0;
+  }
+  h4, label {
+    font-family: $f-book;
+    font-size: 0.8125rem;
+    color: #888482;
+    margin: 0 0 1rem;
+    padding: 0;
+    display: block;
+  }
+  form {
+    select {
+      display: block;
+      width: 100%;
+    }
+  }
+}

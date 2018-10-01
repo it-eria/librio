@@ -5,19 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="libs/semantic/dist/semantic.min.css">
-  <link rel="stylesheet" href="css/vendors/aos.css">
+  <link rel="stylesheet" href="css/vendors/nice-select.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Librio</title>
 </head>
 <body ><header class="header">
   <div class="container">
     <div class="ui two column grid">
-      <div class="four wide column">
+      <div class="three wide column mobile only tablet only">
+        <a href="#" class="btn btn--burger">
+          <span></span>
+        </a>
+      </div>
+      <div class="ten wide mobile ten wide tablet four wide computer column logo-wrapper">
         <a href="#" class="logo">
           <img src="img/logo.png" alt="logo">
         </a>
       </div>
-      <div class="twelve wide column right aligned">
+      <div class="three wide mobile three wide tablet twelve wide computer column right aligned">
         <a href="#" class="btn btn--cart">
           <i class="shopping cart icon"></i>
           <span class="btn--cart__currency">$</span>
@@ -34,32 +39,41 @@
     </div>
 <div class="shoping-cart-item" data-js="shoping-cart-item">
   <div class="ui grid">
-    <div class="column two wide shoping-cart-item__image">
+    <div class="four wide mobile two wide tablet two wide computer column shoping-cart-item__image">
       <div class="flex-wrapper">
         <img src="img/img-1.png" alt="image">      
       </div>
     </div>
-    <div class="column four wide shoping-cart-item__about">
-      <h4>The Tree, The Key and Me</h4>
-      <div class="shoping-cart-item__hero">
-        <p>Hero: <b>Nevena</b></p>
+    <div class="ten wide mobile four wide tablet four wide computer column shoping-cart-item__about">
+      <h3>The Tree, The Key and Me</h3>
+      <div class="ui grid">
+        <div class="twelve wide mobile sixteen wide tablet sixteen wide computer column">
+          <div class="shoping-cart-item__hero">
+            <p>Hero: <b>Nevena</b></p>
+          </div>
+          <p>Language: English (GB)</p>
+          <p>Format: Soft Cover</p>
+          <a href="#" class="btn btn--edit">
+            <i class="pencil alternate icon"></i>Edit item
+          </a>
+        </div>
+        <div class="mobile only four wide column">
+          <div class="remove-btn-wrapper">
+            <a href="#" class="btn btn--remove"><i class="x icon"></i></a>
+          </div>
+        </div>
       </div>
-      <p>Language: English (GB)</p>
-      <p>Format: Soft Cover</p>
-      <a href="#" class="btn btn--edit">
-        <i class="pencil alternate icon"></i>Edit item
-      </a>
     </div>
-    <div class="column eight wide shoping-cart-item__price-generator">
+    <div class="sixteen wide mobile eight wide tablet eight wide computer column shoping-cart-item__price-generator">
       <form>
-        <div class="ui four column grid">
-          <div class="column">
+        <div class="ui grid">
+          <div class="eight wide tablet four wide computer column tablet only computer only">
             <h4>Unit Price</h4>
             <div class="price-generator__item unit-price" data-js="unit-price">
               <span class="currency">$</span><span class="value">32.00</span>
             </div>
           </div>
-          <div class="column">
+          <div class="five wide mobile eight wide tablet four wide computer column">
             <h4>Copies</h4>
             <div class="price-generator__item copies">
               <div class="count-ctrl">
@@ -73,7 +87,7 @@
               </div>
             </div>
           </div>
-          <div class="column">
+          <div class="five wide mobile eight wide tablet four wide computer column">
             <h4>Add giftwrap?</h4>
             <div class="price-generator__item giftwrap">
               <label>
@@ -85,7 +99,8 @@
               </label>
             </div>
           </div>
-          <div class="column">
+          <div class="mobile only one wide column"></div>
+          <div class="five wide mobile eight wide tablet four wide computer column">
             <h4>Cost</h4>
             <div class="price-generator__item unit-price" data-js="cost">
               <span class="currency">$</span><span class="value">32.00</span>
@@ -94,7 +109,7 @@
         </div>
       </form>
     </div>
-    <div class="column two wide shoping-cart-item__remove">
+    <div class=" two wide computer column tablet only computer only shoping-cart-item__remove">
       <div class="remove-btn-wrapper">
         <a href="#" class="btn btn--remove"><i class="x icon"></i></a>
       </div>
@@ -103,29 +118,38 @@
 </div>
 <div class="shoping-cart-item" data-js="shoping-cart-item">
   <div class="ui grid">
-    <div class="column two wide shoping-cart-item__image">
+    <div class="four wide mobile two wide tablet two wide computer column shoping-cart-item__image">
       <div class="flex-wrapper">
         <img src="img/img-2.png" alt="image">      
       </div>
     </div>
-    <div class="column four wide shoping-cart-item__about">
-      <h4>The Tree, The Key and Me</h4>
-      <p>Language: English (GB)</p>
-      <p>Format: Soft Cover</p>
-      <a href="#" class="btn btn--edit">
-        <i class="pencil alternate icon"></i>Edit item
-      </a>
+    <div class="ten wide mobile four wide tablet four wide computer column shoping-cart-item__about">
+      <h3>The Tree, The Key and Me</h3>
+      <div class="ui grid">
+        <div class="twelve wide mobile sixteen wide tablet sixteen wide computer column">
+          <p>Language: English (GB)</p>
+          <p>Format: Soft Cover</p>
+          <a href="#" class="btn btn--edit">
+            <i class="pencil alternate icon"></i>Edit item
+          </a>
+        </div>
+        <div class="mobile only four wide column">
+          <div class="remove-btn-wrapper">
+            <a href="#" class="btn btn--remove"><i class="x icon"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="column eight wide shoping-cart-item__price-generator">
+    <div class="sixteen wide mobile eight wide tablet eight wide computer column shoping-cart-item__price-generator">
       <form>
-        <div class="ui four column grid">
-          <div class="column">
+        <div class="ui grid">
+          <div class="eight wide tablet four wide computer column tablet only computer only">
             <h4>Unit Price</h4>
             <div class="price-generator__item unit-price" data-js="unit-price">
               <span class="currency">$</span><span class="value">32.00</span>
             </div>
           </div>
-          <div class="column">
+          <div class="five wide mobile eight wide tablet four wide computer column">
             <h4>Copies</h4>
             <div class="price-generator__item copies">
               <div class="count-ctrl">
@@ -139,7 +163,7 @@
               </div>
             </div>
           </div>
-          <div class="column">
+          <div class="five wide mobile eight wide tablet four wide computer column">
             <h4>Add giftwrap?</h4>
             <div class="price-generator__item giftwrap">
               <label>
@@ -151,7 +175,8 @@
               </label>
             </div>
           </div>
-          <div class="column">
+          <div class="mobile only one wide column"></div>
+          <div class="five wide mobile eight wide tablet four wide computer column">
             <h4>Cost</h4>
             <div class="price-generator__item unit-price" data-js="cost">
               <span class="currency">$</span><span class="value">32.00</span>
@@ -160,7 +185,7 @@
         </div>
       </form>
     </div>
-    <div class="column two wide shoping-cart-item__remove">
+    <div class=" two wide computer column tablet only computer only shoping-cart-item__remove">
       <div class="remove-btn-wrapper">
         <a href="#" class="btn btn--remove"><i class="x icon"></i></a>
       </div>
@@ -168,8 +193,8 @@
   </div>
 </div>
     <div>
-      <div class="ui grid centered">
-        <div class="column four wide">
+      <div class="ui grid centered aligned">
+        <div class="sixteen wide mobile ten wide tablet four wide computer column">
           <a href="#" class="btn btn--add-more">
             <i class="plus circle icon"></i> Add Another Book
           </a>
@@ -177,8 +202,8 @@
       </div>
     </div>
     <div>
-      <div class="ui grid centered">
-        <div class="column seven wide get-discount">
+      <div class="ui grid centered aligned">
+        <div class="sixteen wide mobile ten wide tablet seven wide computer column get-discount">
           <p>Add another book to get 15% off everything. Code <span>YAY15</span></p>
         </div>
       </div>
@@ -186,7 +211,7 @@
     <div>
 <div class="shoping-cart-summary-row-item">
   <div class="ui grid">
-    <div class="right floated column four wide">
+    <div class="sixteen wide mobile four wide tablet four wide computer column right floated">
       <h4>Discount</h4>
       <div class="discount">
         -<span class="currency">$</span><span class="value">13.00</span> <span class="percents">(10%)</span>
@@ -196,9 +221,9 @@
 </div>
 <div class="shoping-cart-summary-row-item">
   <div class="ui grid">
-    <div class="right floated column four wide">
+    <div class="sixteen wide mobile four wide tablet four wide computer column right floated">
       <h4>Estimated shipping</h4>
-      <div>
+      <div class="shiping-price">
         <span class="currency">$</span><span class="value">20.00</span>
       </div>
     </div>
@@ -206,21 +231,111 @@
 </div>
 <div class="shoping-cart-summary-row-item">
   <div class="ui grid">
-    <div class="right floated column four wide">
+    <div class="tablet only computer only column eight wide"></div>
+    <div class="tablet only computer only four wide column">
+      <h4>Payment Options</h4>
+      <ul class="payments">
+        <li><a href="#" class="card card--visa"></a></li>
+        <li><a href="#" class="card card--mastercard"></a></li>
+        <li><a href="#" class="card card--american-express"></a></li>
+        <li><a href="#" class="card card--discover"></a></li>
+        <li><a href="#" class="card card--paypal"></a></li>
+      </ul>
+    </div>
+    <div class="sixteen wide mobile four wide tablet four wide computer column">
       <h4>Total Price</h4>
       <div class="total">
         <span class="currency">$</span><span class="value">118.50</span>
       </div>
     </div>
+    <div class="sixteen wide mobile only column">
+      <ul class="payments">
+        <li><a href="#" class="card card--visa"></a></li>
+        <li><a href="#" class="card card--mastercard"></a></li>
+        <li><a href="#" class="card card--american-express"></a></li>
+        <li><a href="#" class="card card--discover"></a></li>
+        <li><a href="#" class="card card--paypal"></a></li>
+      </ul>
+    </div>
   </div>
 </div>    </div>
     <div>
       <div class="ui grid">
-        <div class="right floated column four wide">
+        <div class="sixteen wide mobile seven wide tablet four wide computer right floated column">
           <a href="#" class="btn btn--checkout">
             <i class="lock icon"></i>
             Go to Checkout
           </a>
+          <div class="coupon">
+            <a href="#">Have a promotional offer or gift card?</a>
+            <form action="#">
+              <label for="coupon">Enter your code</label>
+              <input type="text" id="coupon">
+              <button type="submit">Apply coupon</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+<div class="content__title mt-1">
+  <h4>Shipping cost and time estimate</h4>
+</div>
+<div class="shiping-cost-row-item">
+  <div class="ui grid">
+    <div class="sixteen wide mobile seven wide tablet seven wide computer column">
+      <form action="#">
+        <div class="ui grid">
+          <div class="sixteen wide mobile eight wide tablet eight wide computer column">
+            <label for="county">Your Country</label>
+            <select id="country">
+              <option value="">Serbia</option>
+              <option value="">Counry 2</option>
+              <option value="">Counry 3</option>
+              <option value="">Counry 4</option>
+              <option value="">Counry 5</option>
+            </select>
+          </div>
+          <div class="sixteen wide mobile eight wide tablet eight wide computer column">
+            <label for="method">Shipping Method </label>
+            <select id="method">
+              <option value="">Standard</option>
+              <option value="">Method 1</option>
+              <option value="">Method 3</option>
+              <option value="">Method 4</option>
+              <option value="">Method 5</option>
+            </select>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="tablet only computer only column one wide"></div>
+    <div class="sixteen wide mobile four wide tablet four wide computer column">
+      <h4>Estimated Time</h4>
+      <div class="price-generator__item">
+        24th August - 1st September
+      </div>
+    </div>
+    <div class="tablet only computer only column one wide"></div>
+    <div class="sixteen wide mobile three wide tablet three wide computer column">
+      <h4>Estimated Cost</h4>
+      <div class="price-generator__item">
+        <span class="currency">$</span><span class="value">20.00</span>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+    <div>
+      <div class="ui grid mobile only">
+        <div class="sixteen wide mobile four wide tablet right floated column">
+          <a href="#" class="btn btn--checkout">
+            <i class="lock icon"></i>
+            Go to Checkout
+          </a>
+          <div class="coupon">
+            <a href="#">Have a promotional offer or gift card?</a>
+          </div>
         </div>
       </div>
     </div>
@@ -231,7 +346,7 @@
   </div>
 </footer><script src="js/vendors/jquery.min.js"></script>
 <script src="libs/semantic/dist/semantic.min.js"></script>
-<script src="js/vendors/aos.js"></script>
+<script src="js/vendors/jquery.nice-select.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

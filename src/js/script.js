@@ -34,10 +34,42 @@ $(function() {
     input.trigger('change');
   });
 
+  $('.btn--burger').on('click', function(e) {
+    e.preventDefault();
+    $(this).toggleClass('active');
+  });
+
+  equalHeight('.shoping-cart-item__price-generator h4');
+
+  $(window).on('resize', function() {
+    equalHeight('.shoping-cart-item__price-generator h4');
+  });
+
   function updateCost(parent, value) {
     var newValue = value;
     parent.find('*[data-js="cost"] .value').text(newValue.toFixed(2));
+    updateTotalCost();
   }
 
-  AOS.init();
+  updateTotalCost();
+
+  function updateTotalCost() {
+    var total = 0;
+    $('*[data-js="cost"]').each(function() {
+      total += parseFloat($(this).find('.value').text());
+    });
+    total += parseFloat($('.shiping-price .value').text());
+    total -= parseFloat($('.discount .value').text());
+    $('.total .value').text(total.toFixed(2));
+  }
+
+  function equalHeight(el) {
+    var elHeight = 0;
+    $(el).each(function(index) {
+      elHeight = (parseFloat($(this).height()) > elHeight) ? parseFloat($(this).height()) : elHeight;
+    });
+    $(el).css('height', elHeight + 'px');
+  }
+
+  $('select').niceSelect();
 });

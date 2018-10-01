@@ -8,9 +8,126 @@
   body {
     font-size: 14px;
   }
+  .logo-wrapper {
+    text-align: center;
+  }
+  .btn {
+    &--cart {
+      position: relative;
+      top: 15px;
+      padding: 0;
+      border: none;
+      span {
+        display: none;
+      }
+      i {
+        font-size: 1.78rem;
+      }
+    }
+    &--remove {
+      transform: translate(-20%, 0);
+    }
+  }
+  .content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-size: auto 285px;
+  }
+  .content__title {
+    h2 {
+      font-size: 1.8rem;
+    }
+    h4 {
+      font-size: 1.1rem;
+    }
+  }
+  .shoping-cart-item {
+    padding: 10px 5px;
+    .flex-wrapper {
+      align-items: flex-start;
+    }
+    &__price-generator {
+      form {
+        padding-top: 5px;
+      }
+    }
+    &__about {
+      h4 {
+        font-size: 1.07rem;
+      }
+    }
+    &__image {
+      img {
+        max-width: 90%;
+        margin: 0 auto;
+      }
+    }
+  }
+  .shoping-cart-summary-row-item {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .ui.grid {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    margin-top: -0.5rem;
+    margin-bottom: -0.5rem;
+  }
+  .ui.grid>.column:not(.row), .ui.grid>.row>.column {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .shiping-cost-row-item {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }
 
 /* Mobile */
 @media screen and (max-width: 767.55px) {
-
+  .shoping-cart-item {
+    &__price-generator {
+      h4 {
+        white-space: nowrap;
+      }
+    }
+  }
+  .shoping-cart-summary-row-item {
+    .payments {
+      text-align: center;
+      margin-top: 15px;
+    }
+    h4, .discount, .shiping-price, .total {
+      display: inline-block;
+      vertical-align: middle;
+      width: 49%;
+      margin: 0;
+      padding: 0;
+    }
+    .discount, .shiping-price, .total {
+      text-align: right;
+      .percents {
+        display: none;
+      }
+    }
+  }
+  .shiping-cost-row-item {
+    h4, .price-generator__item {
+      display: inline-block;
+      width: 49%;
+      vertical-align: middle;
+      margin: 0;
+      padding: 0;
+    }
+    .price-generator__item {
+      text-align: right;
+    }
+  }
+  .coupon {
+    form {
+      display: none;
+    }
+  }
 }
