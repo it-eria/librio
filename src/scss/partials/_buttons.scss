@@ -99,6 +99,9 @@
       background-color: lighten($c-lightblue-2, 5%);
       box-shadow: 0 6px 0 lighten(#268f8e, 5%);
     }
+    .icon.arrow.right {
+      font-size: 14px;
+    }
   }
   &--burger {
     display: block;

@@ -133,4 +133,33 @@
   .pl-0 {
     padding-left: 0.5rem !important;
   }
+  .tabs {
+    .item {
+      margin-right: 60px;
+      .b-icon {
+        &:after {
+          width: 40px;
+          left: 40px;
+        }
+      }
+    }
+  }
+  .b-checkout {
+    padding: 1.4rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .tabs {
+    .item {
+      margin-right: 40px;
+      font-size: 0.7rem;
+      .b-icon {
+        &:after {
+          width: 30px;
+          left: 35px;
+        }
+      }
+    }
+  }
 }

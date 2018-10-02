@@ -1,8 +1,8 @@
-<div class="content">
+<div class="cart-content">
   <div class="container">
     <div class="ui grid centered aligned">
-      <div class="sixteen wide mobile ten tablet eight computer">
-        <div class="content__title t-center">
+      <div class="sixteen wide mobile twelve wide tablet nine wide computer column">
+        <div class="cart-content__title t-center">
           <h5>
             <span><i class="lock icon"></i></span>
             Secure checkout
@@ -15,7 +15,7 @@
             </div>
             Shopping Cart
           </a>
-          <a href="#" data-tab="details-tab" class="item active">
+          <a href="#" data-tab="details-tab" class="item">
             <div class="b-icon">
               <i class="icon check"></i>
               <i class="pencil alternate icon"></i>
@@ -29,7 +29,7 @@
             </div>
             Shipping
           </a>
-          <a href="#" data-tab="payment-tab" class="item">
+          <a href="#" data-tab="payment-tab" class="item active">
             <div class="b-icon">
               <i class="icon check"></i>
               <i class="icon credit card"></i>
@@ -37,6 +37,14 @@
             Payment
           </a>
         </div>
+      </div>
+    </div>
+    <div class="ui grid centered aligned">
+      <div class="sixteen wide mobile twelve wide tablet eight wide computer column">
+        {{> order-summary }}
+        {{> tab-details }}
+        {{> tab-shipping }}
+        {{> tab-payment }}
       </div>
     </div>
   </div>

@@ -12,7 +12,7 @@
     font-family: $f-book;
     font-size: 0.8125rem;
     color: #888482;
-    margin: 0 0 1rem;
+    margin: 0 0 .7rem;
     padding: 0;
   }
   color: #2f5a75;
@@ -46,23 +46,24 @@
         height: 23px;
         background-repeat: no-repeat;
         background-position: 50% 50%;
-        background-size: cover;
+        background-size: contain;
         border: 1px solid #e0e0e0;
         &.card {
           &--visa {
-            background-image: url('../img/card-visa.jpg');
+            background-image: url('../img/visa.png');
           }
           &--mastercard {
-            background-image: url('../img/card-mastercard.jpg');
+            background-image: url('../img/mastercard.png');
           }
           &--discover {
-            background-image: url('../img/card-discover.jpg');
+            background-image: url('../img/discover.png');
           }
           &--paypal {
-            background-image: url('../img/card-paypal.jpg');
+            background-image: url('../img/paypal.png');
           }
           &--american-express {
-            background-image: url('../img/card-american-express.jpg');
+            background-size: cover;
+            background-image: url('../img/americanexpress.png');
           }
         }
       }

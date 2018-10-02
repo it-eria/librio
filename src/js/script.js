@@ -72,4 +72,7 @@ $(function() {
   }
 
   $('select').niceSelect();
+
+  $('.tabs .item').tab();
+  $('.ui.accordion').accordion();
 });
