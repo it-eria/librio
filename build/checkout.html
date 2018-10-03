@@ -49,7 +49,7 @@
             </div>
             Shopping Cart
           </a>
-          <a href="#" data-tab="details-tab" class="item">
+          <a href="#" data-tab="details-tab" class="item active">
             <div class="b-icon">
               <i class="icon check"></i>
               <i class="pencil alternate icon"></i>
@@ -63,7 +63,7 @@
             </div>
             Shipping
           </a>
-          <a href="#" data-tab="payment-tab" class="item active">
+          <a href="#" data-tab="payment-tab" class="item">
             <div class="b-icon">
               <i class="icon check"></i>
               <i class="icon credit card"></i>
@@ -105,125 +105,351 @@
       </span>
     </li>
   </ul>
-</div><div class="b-checkout tab-detail ui tab" data-tab="details-tab">
-  <div class="b-checkout__title">
-    <h3>Your Details</h3>
-  </div>
-  <form action="#">
-    <div>
-      <label for="tab-1-email">Email<span class="required">*</span></label>
-      <input type="email" id="tab-1-email" required>
+</div><div class="tab-detail ui tab active" data-tab="details-tab">
+  <div class="b-checkout">
+    <div class="b-checkout__title">
+      <h3>Your Details</h3>
     </div>
-    <div>
-      <label for="tab-1-firstname">First Name<span class="required">*</span></label>
-      <input type="text" id="tab-1-firstname" required>
-    </div>
-    <div>
-      <label for="tab-1-lastname">Last Name<span class="required">*</span></label>
-      <input type="text" id="tab-1-lastname" required>
-    </div>
-    <div>
-      <label>
-        <input type="checkbox">
-        <span class="pseudo-checkbox">
-          <i class="check icon"></i>
-        </span>
-        <span>I’d like to receive Librio’s infrequent, fun newsletter.</span>
-      </label>
-    </div>
-  </form>
-</div><div class="b-checkout tab-shipping ui tab" data-tab="shipping-tab">
-  <div class="b-checkout__title">
-    <h3>Shipping Address</h3>
-  </div>
-  <form action="#">
-    <div class="ui grid">
-      <div class="sixteen wide mobile eight wide tablet eight wide computer column">
-        <label for="tab-2-firstname">First name<span class="required">*</span></label>
-        <input type="text" id="tab-2-firstname">
+    <form action="#">
+      <div>
+        <label for="tab-1-email">Email<span class="required">*</span></label>
+        <input type="email" id="tab-1-email" required>
       </div>
-      <div class="sixteen wide mobile eight wide tablet eight wide computer column">
-        <label for="tab-2-lastname">Last name<span class="required">*</span></label>
-        <input type="text" id="tab-2-lastname">
+      <div>
+        <label for="tab-1-firstname">First Name<span class="required">*</span></label>
+        <input type="text" id="tab-1-firstname" required>
       </div>
-    </div>
-    <a href="#" class="add-link">Add company name</a>
-    <div>
-      <label for="tab-2-streetaddress">Street address<span class="required">*</span></label>
-      <input type="text" id="tab-2-streetaddress">
-    </div>
-    <div>
-      <label for="tab-2-city">City<span class="required">*</span></label>
-      <input type="text" id="tab-2-city">
-    </div>
-    <div>
-      <label for="tab-2-postcode">Postcode<span class="required">*</span></label>
-      <input type="text" id="tab-2-postcode">
-    </div>
-    <div>
-      <label for="tab-2-country">Country<span class="required">*</span></label>
-      <select type="text" id="tab-2-country">
-        <option value="" selected disabled>Choose</option>
-        <option value="">Country 1</option>
-        <option value="">Country 2</option>
-        <option value="">Country 3</option>
-        <option value="">Country 4</option>
-        <option value="">Country 5</option>
-      </select>
-    </div>
-    <div>
-      <label>
-        <input type="checkbox">
-        <span class="pseudo-checkbox">
-          <i class="check icon"></i>
-        </span>
-        <span>Use different address for billing?</span>
-      </label>
-    </div>
-  </form>
-</div><div class="b-checkout tab-payment ui tab active" data-tab="payment-tab">
-  <div class="b-checkout__title">
-    <h3>Payment Options</h3>
-    <h5>Please choose a payment option</h5>
+      <div>
+        <label for="tab-1-lastname">Last Name<span class="required">*</span></label>
+        <input type="text" id="tab-1-lastname" required>
+      </div>
+      <div class="checkbox-row">
+        <label>
+          <input type="checkbox">
+          <span class="pseudo-checkbox">
+            <i class="check icon"></i>
+          </span>
+          <span>I’d like to receive Librio’s infrequent, fun newsletter.</span>
+        </label>
+      </div>
+    </form>
   </div>
-  <form action="#">
-    <div class="ui accordion">
-      <div class="title">
-        Credit Card
-        <i class="icon angle down"></i>
-      </div>
-      <div class="content">
-        <div>
-          <label for="tab-3-nameoncard">Name on card</label>
-          <input type="text" id="tab-3-nameoncard">
-        </div>
-        <div>
-          <label for="tab-3-cardnumber">Card number</label>
-          <input type="text" id="tab-3-cardnumber">
-        </div>
-        <div class="ui grid">
-          <div class="sixteen wide mobile eight wide tablet eight wide computer column">
-            <label for="tab-3-date">Expiration date</label>
-            <input type="text" id="tab-3-date" placeholder="MM/YY">
+  <div class="navigation-row">
+    <a href="#" class="btn btn--checkout btn--checkout_grey">
+      <i class="icon arrow left"></i> Back
+    </a>
+    <a href="#" class="btn btn--checkout">
+      Next <i class="icon arrow right"></i>
+    </a>
+  </div>
+</div><div class="tab-shipping ui tab" data-tab="shipping-tab">
+  <div class="b-checkout px-0">
+    <div class="b-checkout__title">
+      <h3>Shipping Options</h3>
+      <h5>Please choose your shipping method</h5>
+    </div>
+    <form action="#" class="shipping-options">
+      <div class="shipping-options__item">
+        <input type="radio" name="shipping-option" id="shipping-option-1" checked>
+        <label for="shipping-option-1">
+          <div>
+            <h3>Standard</h3>
+            <p class="desc">First Class untracked</p>
+            <p class="estimated">Estimated delivery: <b>15-11 September</b></p>
           </div>
-          <div class="sixteen wide mobile eight wide tablet eight wide computer column">
-            <label for="tab-3-cvv">CVV</label>
-            <input type="text" id="tab-3-cvv">
+          <div>
+            <span class="currency">$</span><span class="price">3.50</span>
+          </div>
+        </label>
+      </div>
+      <div class="shipping-options__item">
+        <input type="radio" name="shipping-option" id="shipping-option-2">
+        <label for="shipping-option-2">
+          <div>
+            <h3>Tracked</h3>
+            <p class="desc">Priority Shipping with tracking ID</p>
+            <p class="estimated">Estimated delivery: <b>15-11 September</b></p>
+          </div>
+          <div>
+            <span class="currency">$</span><span class="price">12.00</span>
+          </div>
+        </label>
+      </div>
+      <div class="shipping-options__item">
+        <input type="radio" name="shipping-option" id="shipping-option-3">
+        <label for="shipping-option-3">
+          <div>
+            <h3>Standard</h3>
+            <p class="desc">Fastest, tracked and insured</p>
+            <p class="estimated">Estimated delivery: <b>15-11 September</b></p>
+          </div>
+          <div>
+            <span class="currency">$</span><span class="price">25.00</span>
+          </div>
+        </label>
+      </div>
+    </form>
+  </div>
+  <div class="b-checkout">
+    <div class="b-checkout__title">
+      <h3>Shipping Address</h3>
+    </div>
+    <form action="#">
+      <div class="ui grid">
+        <div class="sixteen wide mobile eight wide tablet eight wide computer column">
+          <label for="tab-2-firstname">First name<span class="required">*</span></label>
+          <input type="text" id="tab-2-firstname">
+        </div>
+        <div class="sixteen wide mobile eight wide tablet eight wide computer column">
+          <label for="tab-2-lastname">Last name<span class="required">*</span></label>
+          <input type="text" id="tab-2-lastname">
+        </div>
+      </div>
+      <a href="#" class="add-link">Add company name</a>
+      <div>
+        <label for="tab-2-streetaddress">Street address<span class="required">*</span></label>
+        <input type="text" id="tab-2-streetaddress">
+      </div>
+      <div>
+        <label for="tab-2-city">City<span class="required">*</span></label>
+        <input type="text" id="tab-2-city">
+      </div>
+      <div>
+        <label for="tab-2-postcode">Postcode<span class="required">*</span></label>
+        <input type="text" id="tab-2-postcode">
+      </div>
+      <div>
+        <label for="tab-2-country">Country<span class="required">*</span></label>
+        <select type="text" id="tab-2-country">
+          <option value="" selected disabled>Choose</option>
+          <option value="">Country 1</option>
+          <option value="">Country 2</option>
+          <option value="">Country 3</option>
+          <option value="">Country 4</option>
+          <option value="">Country 5</option>
+        </select>
+      </div>
+      <div>
+        <label>
+          <input type="checkbox">
+          <span class="pseudo-checkbox">
+            <i class="check icon"></i>
+          </span>
+          <span>Use different address for billing?</span>
+        </label>
+      </div>
+    </form>
+  </div>
+  <div class="navigation-row">
+    <a href="#" class="btn btn--checkout btn--checkout_grey">
+      <i class="icon arrow left"></i> Back
+    </a>
+    <a href="#" class="btn btn--checkout">
+      Next <i class="icon arrow right"></i>
+    </a>
+  </div>
+</div>
+<div class="ui tab tab-payment" data-tab="payment-tab">
+  <a href="#" class="checkout-link">Have a promotional offer or gift card?</a>
+  <div class="b-checkout">
+    <div class="b-checkout__title">
+      <h3>Payment Options</h3>
+      <h5>Please choose a payment option</h5>
+    </div>
+    <form action="#">
+      <div class="ui accordion">
+        <div class="title">
+          Credit Card 
+          <div class="credit-radio credit-radio--mastercard"></div>
+          <div class="credit-radio credit-radio--visa"></div>
+          <div class="credit-radio credit-radio--americanexpress"></div>
+          <i class="icon angle down"></i>
+        </div>
+        <div class="content">
+          <div>
+            <label for="tab-3-nameoncard">Name on card</label>
+            <input type="text" id="tab-3-nameoncard">
+          </div>
+          <div>
+            <label for="tab-3-cardnumber">Card number</label>
+            <input type="text" id="tab-3-cardnumber">
+          </div>
+          <div class="ui grid">
+            <div class="eight wide mobile eight wide tablet eight wide computer column">
+              <label for="tab-3-date">Expiration date</label>
+              <input type="text" id="tab-3-date" placeholder="MM/YY">
+            </div>
+            <div class="eight wide mobile eight wide tablet eight wide computer column">
+              <label for="tab-3-cvv">CVV</label>
+              <input type="text" id="tab-3-cvv">
+            </div>
+          </div>
+          <div>
+            <button type="submit" class="btn btn--checkout">Pay Now <i class="icon arrow right"></i></button>
           </div>
         </div>
-        <div>
-          <button type="submit" class="btn btn--checkout">Pay Now <i class="icon arrow right"></i></button>
+        <div class="title">
+          PayPal
+          <div class="credit-radio credit-radio--paypal"></div>
+          <i class="icon angle down"></i>
+        </div>
+        <div class="content">
+          <div>
+            <label for="tab-3_1-nameoncard">Name on card</label>
+            <input type="text" id="tab-3_1-nameoncard">
+          </div>
+          <div>
+            <label for="tab-3_1-cardnumber">Card number</label>
+            <input type="text" id="tab-3_1-cardnumber">
+          </div>
+          <div class="ui grid">
+            <div class="eight wide mobile eight wide tablet eight wide computer column">
+              <label for="tab-3_1-date">Expiration date</label>
+              <input type="text" id="tab-3_1-date" placeholder="MM/YY">
+            </div>
+            <div class="eight wide mobile eight wide tablet eight wide computer column">
+              <label for="tab-3_1-cvv">CVV</label>
+              <input type="text" id="tab-3_1-cvv">
+            </div>
+          </div>
+          <div>
+            <button type="submit" class="btn btn--checkout">Pay Now <i class="icon arrow right"></i></button>
+          </div>
         </div>
       </div>
-      <div class="title">
-        PayPal
-        <i class="icon angle down"></i>
-      </div>
-      <div class="content">
-        
+    </form>
+  </div>
+  <div class="b-checkout b-checkout--items">
+    <div class="item-inf">
+      <div class="ui grid">
+        <div class="five wide column shoping-cart-item__image">
+          <img src="img/img-1.png" alt="image">
+        </div>
+        <div class="eleven wide column shoping-cart-item__about">
+          <h3>The Tree, The Key and Me</h3>
+          <div>
+            <div class="shoping-cart-item__hero">
+              <p>Hero: <b>Nevena</b></p>
+            </div>
+            <p>Language: English (GB)</p>
+            <p>Format: Soft Cover</p>
+            <a href="#" class="btn btn--edit">
+              <i class="pencil alternate icon"></i>Edit item
+            </a>
+          </div>
+        </div>
+        <div class="sixteen wide mobile sixteen wide tablet sixteen wide computer column shoping-cart-item__price-generator">
+          <div class="ui three column grid">
+            <div class="column">
+              <h4>Copies</h4>
+              <div class="price-generator__item">
+                1 x <span class="currency">$</span><span class="value">32.00</span>
+              </div>
+            </div>
+            <div class="column">
+              <h4>Giftwrap</h4>
+              <div class="price-generator__item">
+                <span class="currency">$</span><span class="value">3.50</span>
+              </div>
+            </div>
+            <div class="column">
+              <h4>Cost</h4>
+              <div class="price-generator__item">
+                <span class="currency">$</span><span class="value">32.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </form>
+    <div class="item-inf">
+      <div class="ui grid">
+        <div class="five wide column shoping-cart-item__image">
+          <img src="img/img-2.png" alt="image">
+        </div>
+        <div class="eleven wide column shoping-cart-item__about">
+          <h3>The Tree, The Key and Me</h3>
+          <div>
+            <div class="shoping-cart-item__hero">
+              <p>Hero: <b>Minja</b></p>
+            </div>
+            <p>Language: English (GB)</p>
+            <p>Format: Soft Cover</p>
+            <a href="#" class="btn btn--edit">
+              <i class="pencil alternate icon"></i>Edit item
+            </a>
+          </div>
+        </div>
+        <div class="sixteen wide mobile sixteen wide tablet sixteen wide computer column shoping-cart-item__price-generator">
+          <div class="ui three column grid">
+            <div class="column">
+              <h4>Copies</h4>
+              <div class="price-generator__item">
+                2 x <span class="currency">$</span><span class="value">32.00</span>
+              </div>
+            </div>
+            <div class="column"></div>
+            <div class="column">
+              <h4>Cost</h4>
+              <div class="price-generator__item">
+                <span class="currency">$</span><span class="value">64.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="b-checkout order-summary">
+    <div class="b-checkout__title">
+      <h3>Shipping Address</h3>
+    </div>
+    <ul>
+      <li>
+        <span class="item-title">Name</span>
+        <span class="item-price">
+          <span class="value">Gordana Divjak</span>
+        </span>
+      </li>
+      <li>
+        <span class="item-title">Address</span>
+        <span class="item-price">
+          <span class="value">Example Address 5</span>
+        </span>
+      </li>
+      <li>
+        <span class="item-title">City</span>
+        <span class="item-price">
+          <span class="value">Zrenjanin, 23000</span>
+        </span>
+      </li>
+      <li class="total-price">
+        <span class="item-title">Country</span>
+        <span class="item-price">
+          <span class="value">Serbia</span>
+        </span>
+      </li>
+      <li class="total-price">
+        <span class="item-title">Estimated delivery date</span>
+        <span class="item-price">
+          <span class="value">5-11 September</span>
+        </span>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <div class="ui grid center aligned">
+      <div class="b-checkout__title mb-0 mt-1 eight wide column">
+        <h5>
+          You will be able to m`ake any changes to
+          your order for 10 hours after purchase.
+        </h5>
+      </div>
+    </div>
+    <button type="submit" class="btn btn--checkout">
+      Select Payment Method
+    </button>
+  </div>
 </div>      </div>
     </div>
   </div>

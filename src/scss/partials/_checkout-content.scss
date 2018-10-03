@@ -96,12 +96,18 @@
 
 .b-checkout {
   width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
   border: 1px solid #dbdbdb;
   border-radius: 5px;
   background-color: #fff;
   padding: 1.875rem 2.1875rem;
-  & + .b-checkout {
+  & + .b-checkout, & + div {
     margin-top: 15px;
+  }
+  &.order-summary {
+    margin-bottom: 15px;
   }
   &__title {
     text-align: center;
@@ -192,8 +198,11 @@
     div + div {
       margin-top: 1.3rem;
       &.grid {
-        margin-top: 1rem;
+        margin-top: 0.9rem;
         margin-bottom: 0;
+      }
+      &.checkbox-row {
+        margin-top: 2.5rem;
       }
       &.column {
         margin-top: 0;
@@ -267,7 +276,7 @@
       font-family: $f-book;
       font-size: 0.875rem;
       color: #888482;
-      padding: 15px 30px;
+      padding: 11px 30px;
       .icon {
         position: absolute;
         right: 15px;
@@ -304,5 +313,174 @@
       margin-top: 1rem;
       padding: 0 1.5rem 1.8rem !important;
     }
+    .credit-radio {
+      display: inline-block;
+      width: 49px;
+      height: 33px;
+      margin: 0 0 0 5px;
+      padding: 0;
+      vertical-align: middle;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: contain;
+      input {
+        display: none;
+      }
+      &--mastercard {
+        background-image: url('../img/mastercard-2.png');
+      }
+      &--visa {
+        background-image: url('../img/visa-2.png');
+      }
+      &--americanexpress {
+        background-image: url('../img/americanexpress-2.png');
+      }
+      &--paypal {
+        background-image: url('../img/paypal-2.png');
+      }
+    }
   }
+  &--items {
+    border-radius: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    .item-inf {
+      padding: 1rem 2.1875rem;
+      border-bottom: 1px solid #dbdbdb;
+      &:last-child {
+        border: none;
+      }
+      .shoping-cart-item__about {
+        padding-bottom: 0.25rem !important;
+      }
+    }
+  }
+}
+
+.tab-payment {
+  .btn {
+    &--checkout {
+      display: block;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.shipping-options {
+  &__item {
+    padding: 1.25rem 2.1875rem;
+    border-top: 1px solid #e7e6e6;
+    border-bottom: 1px solid #e7e6e6;
+    & + .shipping-options__item {
+      border-top: none;
+      margin-top: 0;
+    }
+    input[type="radio"] {
+      display: none;
+      &:checked {
+        & + label {
+          &:after {
+            background-color: #25b6b4;
+          }
+        }
+      }
+    }
+    label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      padding: 0 0 0 50px;
+      position: relative;
+      &:before {
+        content: '';
+        display: block;
+        width: 22px;
+        height: 22px;
+        border: 1px solid #d3d3d3;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        background-color: #f5f5f5;
+      }
+      &:after {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #e3e3e3;
+        position: absolute;
+        left: 6px;
+        top: 50%;
+        transform: translate(0, -50%);
+        transition: all .3s ease-in-out;
+      }
+      div {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        & + div {
+          margin: 0;
+          padding: 0;
+        }
+      }
+      h3 {
+        font-family: $f-medium;
+        font-size: 1.125rem;
+        margin: 0;
+        padding: 0;
+        color: #2f5a75;
+      }
+      p {
+        font-family: $f-book;
+        color: #888482;
+        margin: 0;
+        padding: 0;
+        &.desc {
+          font-size: 11px;
+          text-transform: uppercase;
+        }
+        &.estimated {
+          font-size: 14px;
+          b {
+            font-family: $f-medium;
+            color: #5f6060;
+          }
+        }
+      }
+      span {
+        font-family: $f-medium;
+        font-size: 1.25rem;
+        color: #2f5a75;
+      }
+    }
+  }
+}
+
+.navigation-row {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+  justify-content: space-between;
+  .btn {
+    width: 40%;
+    max-width: 160px;
+  }
+}
+
+.checkout-link {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  font-family: $f-light;
+  text-decoration: underline;
+  color: #888482;
+  margin: 15px 0;
 }

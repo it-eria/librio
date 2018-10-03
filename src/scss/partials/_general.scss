@@ -113,6 +113,7 @@ select {
   }
   .list {
     width: 100%;
+    z-index: 5555;
   }
   &:after {
     width: 8px;
@@ -126,4 +127,17 @@ select {
 
 .pl-0 {
   padding-left: 0 !important;
+}
+
+.px-0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mt-1 {
+  margin-top: 0.7rem;
 }
