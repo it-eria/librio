@@ -108,6 +108,13 @@
   }
   &.order-summary {
     margin-bottom: 15px;
+    ul {
+      li {
+        .item-price {
+          text-align: right;
+        }
+      }
+    }
   }
   &__title {
     text-align: center;
@@ -313,7 +320,7 @@
       margin-top: 1rem;
       padding: 0 1.5rem 1.8rem !important;
     }
-    .credit-radio {
+    .credit {
       display: inline-block;
       width: 49px;
       height: 33px;

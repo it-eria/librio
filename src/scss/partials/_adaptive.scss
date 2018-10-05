@@ -201,6 +201,37 @@
   }
   .b-checkout {
     padding: 1.4rem 0.5rem;
+    &.order-summary {
+      ul {
+        li {
+          &.total-price {
+            .item-price, .item-title {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+    &--items {
+      .item-inf {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+    .accordion {
+      &.ui {
+        .credit {
+          width: 39px;
+          height: 23px;
+          margin: 0;
+          &--paypal {
+            width: 49px;
+            height: 33px;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
   }
   .btn {
     &--edit {
